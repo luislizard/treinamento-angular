@@ -1,0 +1,7 @@
+header .container{
+    background-color: azure;
+}
+
+header .container .logo{
+    width: 60px;
+}
