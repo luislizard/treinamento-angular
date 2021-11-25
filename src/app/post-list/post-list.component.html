@@ -1,1 +1,6 @@
-<p>post-list works!</p>
+<div class="row mb-2">
+    <div *ngFor="let post of posts;">
+        <app-post-item [thisPost]="post" ></app-post-item>
+    </div>
+    
+</div>

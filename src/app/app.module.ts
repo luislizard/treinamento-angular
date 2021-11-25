@@ -8,6 +8,8 @@ import { PostViewComponent } from './post-view/post-view.component';
 import { HeaderComponent } from './core/layout/header/header.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { NavComponent } from './core/layout/nav/nav.component';
+import { PostItemComponent } from './post-item/post-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavComponent } from './core/layout/nav/nav.component';
     PostViewComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    PostItemComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
