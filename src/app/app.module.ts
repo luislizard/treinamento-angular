@@ -10,6 +10,10 @@ import { FooterComponent } from './core/layout/footer/footer.component';
 import { NavComponent } from './core/layout/nav/nav.component';
 import { PostItemComponent } from './post-item/post-item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortifolioComponent } from './portifolio/portifolio.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     NavComponent,
     PostItemComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutComponent,
+    ContactComponent,
+    PortifolioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
