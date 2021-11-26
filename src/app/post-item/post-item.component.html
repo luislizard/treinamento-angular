@@ -6,7 +6,7 @@
             <div class="mb-1 text-muted">{{ thisPost.created }}</div>
             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
                 additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a [routerLink]="['/post', thisPost.id]"  class="stretched-link">Continue Lendo</a>
         </div>
         <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
