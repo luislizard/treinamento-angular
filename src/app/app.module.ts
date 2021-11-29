@@ -13,7 +13,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
