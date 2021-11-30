@@ -1,3 +1,4 @@
+import { CommentsDataService } from './services/comments-data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentsComponent implements OnInit {
 
-  constructor() { }
+  comments: any;
+
+  constructor(private commentsService: CommentsDataService) { }
 
   ngOnInit(): void {
+    this.commentsService.getComments().subscribe((res)=> this.comments = res)
   }
 
 }

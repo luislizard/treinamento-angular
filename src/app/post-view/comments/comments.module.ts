@@ -2,6 +2,7 @@ import { CommentsRoutingModule } from './comments-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommentsComponent } from './comments.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -11,7 +12,8 @@ import { CommentsComponent } from './comments.component';
   ],
   imports: [
     CommonModule,
-    CommentsRoutingModule
+    CommentsRoutingModule,
+    HttpClientModule
   ]
 })
 export class CommentsModule { }
