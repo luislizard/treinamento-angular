@@ -1,0 +1,5 @@
+<ul *ngFor="let comentario of comments; index as iccc;">
+  <li>comentario: {{iccc + 1}} <p>{{ comentario.comment }}</p></li>
+</ul>
+
+<app-comments-form></app-comments-form>
