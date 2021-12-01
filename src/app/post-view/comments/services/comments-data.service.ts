@@ -11,6 +11,7 @@ export class CommentsDataService {
   }
 
   getComments(){
-    return this.http.get<Comments[]>(this.apiUrl+'/comments');
+    return this.http.get<Comments[]>(`${this.apiUrl}/comments`);
+    // return this.http.get<Comments[]>(this.apiUrl+'/comments');
   }
 }
