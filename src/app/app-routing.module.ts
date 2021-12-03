@@ -12,6 +12,7 @@ import { PostListComponent } from './post-list/post-list.component';
 const routes: Routes = [
   { path: 'not-found', component: NotFoundComponent },
   { path: 'posts', component: PostListComponent },
+  { path: 'busca/:keyword', component: PostListComponent },
   {
     path: 'post/:id',
     component: PostViewComponent,

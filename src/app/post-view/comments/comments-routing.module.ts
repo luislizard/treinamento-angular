@@ -4,7 +4,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: CommentsComponent, outlet: 'comments-outlet', canActivate:[LoginGuard] },
+  {
+    path: '',
+    component: CommentsComponent,
+    outlet: 'comments-outlet',
+    canActivate: [LoginGuard],
+  },
 ];
 
 @NgModule({

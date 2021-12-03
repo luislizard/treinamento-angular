@@ -1,6 +1,7 @@
 <div class="row mb-2">
+    <h1 *ngIf="keyword">Voce esta buscando por: {{ keyword }}</h1>
     <div *ngFor="let post of posts;">
         <app-post-item [thisPost]="post" ></app-post-item>
     </div>
-    
+
 </div>
