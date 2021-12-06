@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LayoutComponent } from './core/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotFoundComponent,
     AboutComponent,
     ContactComponent,
-    PortifolioComponent
+    PortifolioComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<main class="form-signin">
+  <form action="cadastra-nota.html" [formGroup]="loginForm" (ngSubmit)="sendForm()">
+    <img class="mb-4" src="files/img/logo.svg" alt="" width="300">
+    <h1 class="h3 mb-3 fw-normal">Autentique-se.</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="email" formControlName="email" placeholder="nome@examplo.com" required>
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="pass" placeholder="Senha" formControlName="pass" required>
+      <label for="floatingPassword">Senha</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Lembrar-me
+      </label>
+    </div>
+    <div id="liveAlertPlaceholder"></div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" id="submitFormBtn">Entrar</button>
+    <p class="mt-5 mb-3 text-muted">© 2011–2021</p>
+  </form>
+</main>
