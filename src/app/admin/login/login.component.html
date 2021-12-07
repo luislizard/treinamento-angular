@@ -3,6 +3,10 @@
     <img class="mb-4" src="files/img/logo.svg" alt="" width="300">
     <h1 class="h3 mb-3 fw-normal">Autentique-se.</h1>
 
+    <div class="alert alert-danger" role="alert" *ngIf="error">
+      Houve um erro ao autenticar-se
+    </div>
+
     <div class="form-floating">
       <input type="email" class="form-control" id="email" formControlName="email" placeholder="nome@examplo.com" required>
       <label for="floatingInput">Email</label>
@@ -18,7 +22,7 @@
       </label>
     </div>
     <div id="liveAlertPlaceholder"></div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit" id="submitFormBtn">Entrar</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" id="submitFormBtn" [disabled]="loading">Entrar</button>
     <p class="mt-5 mb-3 text-muted">© 2011–2021</p>
   </form>
 </main>
